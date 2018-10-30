@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            /* padding-top: 20px; */
+            /* padding-bottom: 20px; */
+            background-color: #333;
+        }
+        .wrapper {
+            width: 1024px;
+            margin: auto;
+        }
+        .clearfix::after { /*虛擬元素*/
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .logo {
+            float: left;
+        }
+        .menu {
+            float: left;
+        }
+        #nav ul {
+            margin: 0;
+            padding: 0;
+        }
+        #nav li {
+            list-style: none;
+            float: left;
+        }
+        .login {
+            float: right;
+        }
+        #nav a {
+            display: block;
+            color: #eee;
+            text-decoration: none;
+            /* margin-left: 10px; */
+            /* margin-right: 10px; */
+            /* padding-top: 20px; */
+
+            /* padding-bottom: 20px; */
+            padding: 20px;
+        }
+        #nav a:hover { /*虛擬類別*/
+            color: #222;
+            background-color: #eee;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="nav">
+        <div class="wrapper clearfix">
+            <div class="logo">
+                <a href="#">ASUS</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">LINK</a></li>
+                    <li><a href="#">LINK</a></li>
+                    <li><a href="#">LINK</a></li>
+                    <li><a href="#">LINK</a></li>
+                    <li><a href="#">LINK</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <li><a href="#">登入</a></li>
+                    <li><a href="#">搜尋</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

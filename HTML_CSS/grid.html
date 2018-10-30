@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="meyer.css"> -->
+    <style>
+        /*global 全域*/
+        * {
+            font-family: "微軟正黑體";
+            box-sizing: border-box;
+        }
+        html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .clearfix::after {
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+        .fixed-width {
+            width: 1200px;
+            /* width: 100%; */
+            margin: auto;
+        }
+        .col-1 {
+            width: calc(100% / 12 * 1);
+        }
+
+        .col-2 {
+            width: calc(100% / 12 * 2);
+        }
+        .col-3 {
+            width: calc(100% / 12 * 3);
+        }
+        .col-4 {
+            width: calc(100% / 12 * 4);
+        }
+        .col-5 {
+            width: calc(100% / 12 * 5);
+        }
+        .col-6 {
+            width: calc(100% / 12 * 6);
+        }
+        .col-7 {
+            width: calc(100% / 12 * 7);
+        }
+        .col-8 {
+            width: calc(100% / 12 * 8);
+        }
+        .col-9 {
+            width: calc(100% / 12 * 9);
+        }
+        .col-10 {
+            width: calc(100% / 12 * 10);
+        }
+        .col-11 {
+            width: calc(100% / 12 * 11);
+        }
+        .col-12 {
+            width: calc(100% / 12 * 12);
+        }
+        [class*="col"]{
+            float: left;
+            padding: 15px;
+        }
+
+        #banner {
+            background-image: url(https://source.unsplash.com/random/1600x600);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: 600px; */
+            padding: 300px 0;
+        }
+        #about {
+            padding: 100px 0;
+            background-color: #ffcd8c;
+        }
+        #service {
+            padding: 100px 0;
+        }
+        #ads {
+            background-image: url(https://source.unsplash.com/random/1600x400);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 200px 0;
+        }
+        #contact {
+            padding: 100px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-width" id="banner"></div>
+    <div class="full-width" id="about">
+        <div class="fixed-width clearfix">
+            <div class="col-6">
+                <h2>TITLE</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur minus facere qui voluptate debitis nobis commodi repellendus, iusto non. Iste debitis quasi qui odit facilis deserunt, ipsam eum animi.</p>
+                <a href="#">More</a>
+            </div>
+            <div class="col-6">
+                <h2>TITLE</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur minus facere qui voluptate debitis nobis commodi repellendus, iusto non. Iste debitis quasi qui odit facilis deserunt, ipsam eum animi.</p>
+                <a href="#">More</a>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="service">
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa reiciendis rem. Possimus rem dolore, tenetur laboriosam autem mollitia ea. Dolorum veniam at alias, quam rerum qui amet natus omnis!
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa reiciendis rem. Possimus rem dolore, tenetur laboriosam autem mollitia ea. Dolorum veniam at alias, quam rerum qui amet natus omnis!
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa reiciendis rem. Possimus rem dolore, tenetur laboriosam autem mollitia ea. Dolorum veniam at alias, quam rerum qui amet natus omnis!
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse culpa reiciendis rem. Possimus rem dolore, tenetur laboriosam autem mollitia ea. Dolorum veniam at alias, quam rerum qui amet natus omnis!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="ads"></div>
+    <div class="full-width" id="contact">
+        <div class="fixed-width clearfix">
+            <div class="col-6">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aut ut, quae mollitia vel ea dolor veniam eligendi deserunt fuga nulla odit suscipit sint, debitis atque quas velit consequatur dolorem.
+                </p>
+                <a href="#">more</a>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

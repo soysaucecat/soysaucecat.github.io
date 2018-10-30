@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            background-color: #ffed88;
+
+            /* height: 200px; */
+            /* overflow: auto; */
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #5bbff1;
+            float: left;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #ff447c;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box2"></div>
+
+    </div>
+</body>
+</html>
